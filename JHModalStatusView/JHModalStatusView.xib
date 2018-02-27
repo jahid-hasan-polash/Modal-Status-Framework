@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JHModalStatusView" customModule="JHModalStatusView" customModuleProvider="target">
+            <connections>
+                <outlet property="headingLabel" destination="You-wQ-ked" id="Rpv-4g-s2n"/>
+                <outlet property="statusImage" destination="zfI-1A-Ncc" id="fGz-2O-KwJ"/>
+                <outlet property="subheadingLabel" destination="DIO-S6-dvP" id="TbX-oJ-Sf1"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <visualEffectView opaque="NO" contentMode="scaleToFill" id="lX6-9F-iPC">
+            <rect key="frame" x="0.0" y="0.0" width="230" height="230"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Vfc-Jm-gdN">
+                <rect key="frame" x="0.0" y="0.0" width="230" height="230"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zfI-1A-Ncc">
+                        <rect key="frame" x="50" y="18" width="130" height="130"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="130" id="4y9-qO-S0L"/>
+                            <constraint firstAttribute="width" constant="130" id="9UZ-wN-6qM"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Headline Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="You-wQ-ked">
+                        <rect key="frame" x="8" y="168" width="214" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Optional Multiline capable subhead label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DIO-S6-dvP">
+                        <rect key="frame" x="8" y="194" width="214" height="31.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="DIO-S6-dvP" secondAttribute="trailing" constant="8" id="Buo-Hh-yu7"/>
+                    <constraint firstItem="You-wQ-ked" firstAttribute="leading" secondItem="Vfc-Jm-gdN" secondAttribute="leading" constant="8" id="GMe-on-Zkp"/>
+                    <constraint firstItem="DIO-S6-dvP" firstAttribute="top" secondItem="You-wQ-ked" secondAttribute="bottom" constant="5" id="SNE-S6-eIX"/>
+                    <constraint firstItem="DIO-S6-dvP" firstAttribute="leading" secondItem="Vfc-Jm-gdN" secondAttribute="leading" constant="8" id="dXw-61-eu4"/>
+                    <constraint firstItem="zfI-1A-Ncc" firstAttribute="centerX" secondItem="Vfc-Jm-gdN" secondAttribute="centerX" id="jak-FN-DKA"/>
+                    <constraint firstItem="zfI-1A-Ncc" firstAttribute="top" secondItem="Vfc-Jm-gdN" secondAttribute="topMargin" constant="10" id="jyM-IS-jHE"/>
+                    <constraint firstAttribute="trailing" secondItem="You-wQ-ked" secondAttribute="trailing" constant="8" id="kUm-cL-4Ub"/>
+                    <constraint firstItem="You-wQ-ked" firstAttribute="top" secondItem="zfI-1A-Ncc" secondAttribute="bottom" constant="20" id="vB9-yG-f0r"/>
+                </constraints>
+            </view>
+            <blurEffect style="light"/>
+            <point key="canvasLocation" x="217" y="81"/>
+        </visualEffectView>
+    </objects>
+</document>
